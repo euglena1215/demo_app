@@ -6,6 +6,8 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:title) %></th>
+      <th><%= model_class.human_attribute_name(:movie) %></th>
       <th><%= model_class.human_attribute_name(:content) %></th>
       <th><%= model_class.human_attribute_name(:user_id) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
@@ -16,6 +18,8 @@
     <% @microposts.each do |micropost| %>
       <tr>
         <td><%= link_to micropost.id, micropost_path(micropost) %></td>
+        <td><%= micropost.title %></td>
+        <td><%= micropost.movie %></td>
         <td><%= micropost.content %></td>
         <td><%= micropost.user_id %></td>
         <td><%=l micropost.created_at %></td>

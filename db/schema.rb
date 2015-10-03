@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151002051239) do
+ActiveRecord::Schema.define(version: 20151003132615) do
 
   create_table "microposts", force: true do |t|
     t.string   "content"
@@ -21,9 +21,6 @@ ActiveRecord::Schema.define(version: 20151002051239) do
     t.text     "title"
     t.text     "movie"
   end
-
-# Could not dump table "posts" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
 
   create_table "users", force: true do |t|
     t.string   "name"
