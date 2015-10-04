@@ -41,6 +41,9 @@ gem 'execjs'
 # Twitter社が提供しているCSSとJavaScriptのフレームワーク
 gem 'twitter-bootstrap-rails'
 
+# 環境変数が使いやすくなる
+gem 'dotenv-rails'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', '0.3.20', require: false
